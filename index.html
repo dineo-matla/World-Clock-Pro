@@ -3,34 +3,55 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap"
       rel="stylesheet"
     />
-    <title>World Clock Pro</title>
+    <title>World Clock Prosync</title>
   </head>
   <body>
-    <h1>World Clock</h1>
-    <footer>
-      <p>
-        Coded by
-        <a href="https://github.com/dineo-matla" target="_blank"
-          >Dineo Mashaba</a
-        >
-        <br />
-        Open-sourced on
-        <a
-          href="https://github.com/dineo-matla/World-Clock-Pro.git"
-          target="_blank"
-          >Github</a
-        >
-        and hosted on
-        <a href="https://world-clock-prosync.netlify.app/" target="_blank"
-          >Netlify</a
-        >
-      </p>
-    </footer>
+    <div class="container">
+      <h1>World Clock</h1>
+      <select>
+        <option>Select</option>
+        <option>Los Angeles</option>
+        <option>London</option>
+        <option>Nairobi</option>
+        <option>Auckland</option>
+      </select>
+      <div class="cities" id="cities">
+        <h2>Singapore</h2>
+        <div class="date">February 19, 2025</div>
+        <div class="time">1:48:15 AM</div>
+      </div>
+      <div class="cities" id="cities">
+        <h2>Dubai</h2>
+        <div class="date">February 19, 2025</div>
+        <div class="time">1:48:15 AM</div>
+      </div>
+      <footer>
+        <p>
+          Coded by
+          <a href="https://github.com/dineo-matla" target="_blank"
+            >Dineo Mashaba</a
+          >
+          <br />
+          Open-sourced on
+          <a
+            href="https://github.com/dineo-matla/World-Clock-Pro.git"
+            target="_blank"
+            >Github</a
+          >
+          and hosted on
+          <a href="https://world-clock-prosync.netlify.app/" target="_blank"
+            >Netlify</a
+          >
+        </p>
+      </footer>
+    </div>
+    <script src="script.js"></script>
   </body>
 </html>
