@@ -17,4 +17,18 @@ body {
 
 h1 {
   font-size: 35px;
+  text-align: center;
+}
+
+select {
+  width: 100%;
+  padding: 8px;
+  border-radius: 5px;
+  font-size: 15px;
+  font-family: "Noto Serif", serif;
+}
+
+footer {
+  font-size: 10px;
+  color: #fff;
 }
