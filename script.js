@@ -30,3 +30,11 @@ function refreshTime() {
 
 refreshTime();
 setInterval(refreshTime, 1000);
+
+function updateCity(event) {
+  let timeZone = event.target.value;
+  console.log(timeZone);
+}
+
+let citySelectionElement = document.querySelector("#location");
+citySelectionElement.addEventListener("change", updateCity);
