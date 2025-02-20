@@ -9,7 +9,8 @@ function refreshTime() {
   let singaporeElement = document.querySelector("#singapore");
   let singaporeDateElement = singaporeElement.querySelector(".date");
   let singaporeTimeElement = singaporeElement.querySelector(".time");
-  singaporeDateElement.innerHTML = moment().format("dddd, MMMM D, YYYY");
+  let singaporeDate = moment().tz("Asia/Singapore");
+  singaporeDateElement.innerHTML = singaporeDate.format("dddd, MMMM D, YYYY");
   let singaporeTime = moment().tz("Asia/Singapore");
   singaporeTimeElement.innerHTML = singaporeTime.format(
     "HH:mm:ss [<small>]A[</small>]"
@@ -19,7 +20,8 @@ function refreshTime() {
   let dubaiElement = document.querySelector("#dubai");
   let dubaiDateElement = dubaiElement.querySelector(".date");
   let dubaiTimeElement = dubaiElement.querySelector(".time");
-  dubaiDateElement.innerHTML = moment().format("dddd, MMMM D, YYYY");
+  let dubaiDate = moment().tz("Asia/Dubai");
+  dubaiDateElement.innerHTML = dubaiDate.format("dddd, MMMM D, YYYY");
   let dubaiTime = moment().tz("Asia/Dubai");
   dubaiTimeElement.innerHTML = dubaiTime.format(
     "HH:mm:ss [<small>]A[</small>]"
