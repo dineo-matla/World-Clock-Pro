@@ -5,16 +5,16 @@ body {
 
 .container {
   display: block;
-  max-width: 500px;
+  max-width: 600px;
   margin: 10px auto;
   padding: 35px;
-  color: #000;
+  color: #01061a;
   background-color: rgba(255, 255, 255, 40%);
   border-radius: 2px;
 }
 
 img {
-  max-width: 500px;
+  max-width: 600px;
   border-radius: 15px;
 }
 
@@ -22,7 +22,8 @@ img {
   display: block;
   margin: 15px auto;
   text-align: center;
-  font-size: 55px;
+  font-size: 50px;
+  font-weight: bold;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
@@ -42,7 +43,33 @@ select {
   border-bottom: 1px dashed #595f61;
 }
 
+.cities:last-child {
+  border: none;
+}
+
+.time {
+  font-size: 30px;
+  font-weight: bold;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.date {
+  opacity: 0.8;
+  margin-top: 5px;
+}
+
+h2 {
+  font-size: 30px;
+  margin: 0;
+}
+
 footer {
   font-size: 10px;
   color: #000;
+}
+
+a {
+  color: #01061a;
+  text-decoration: none;
+  font-weight: bold;
 }
