@@ -81,3 +81,22 @@ a {
   text-decoration: none;
   font-weight: bold;
 }
+
+@media (max-width: 768px) {
+  .header-time {
+    font-size: 30px;
+  }
+
+  .cities {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .time {
+    font-size: 20px;
+  }
+
+  h2 {
+    font-size: 24px;
+  }
+}
