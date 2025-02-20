@@ -51,9 +51,14 @@ select {
 }
 
 .time {
-  font-size: 30px;
+  font-size: 32px;
   font-weight: bold;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+small {
+  font-size: 18px;
+  vertical-align: middle;
 }
 
 .date {
@@ -62,7 +67,7 @@ select {
 }
 
 h2 {
-  font-size: 30px;
+  font-size: 32px;
   margin: 0;
 }
 

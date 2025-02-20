@@ -10,6 +10,8 @@
       href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap"
       rel="stylesheet"
     />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.30.1/moment.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment-timezone/0.5.46/moment-timezone-with-data-1970-2030.min.js"></script>
     <title>World Clock Prosync</title>
   </head>
   <body>
@@ -18,7 +20,7 @@
         <div>
           <img src="media/World Dotted Map Design1.JPG" alt="world map" />
         </div>
-        <div class="header-time">1:48:15 <small>AM</small></div>
+        <div class="header-time" id="time-header"></div>
       </header>
       <select id="location">
         <option value="">City Selection</option>
@@ -28,19 +30,19 @@
         <option value="auckland">Auckland</option>
         <option value="new delhi">New Delhi</option>
       </select>
-      <div class="cities">
+      <div class="cities" id="singapore">
         <div>
           <h2>Singapore</h2>
-          <div class="date">February 19, 2025</div>
+          <div class="date"></div>
         </div>
-        <div class="time">1:48:15 <small>AM</small></div>
+        <div class="time"></div>
       </div>
-      <div class="cities" id="cities">
+      <div class="cities" id="dubai">
         <div>
           <h2>Dubai</h2>
-          <div class="date">February 19, 2025</div>
+          <div class="date"></div>
         </div>
-        <div class="time">1:48:15 <small>AM</small></div>
+        <div class="time"></div>
       </div>
     </div>
     <footer>
