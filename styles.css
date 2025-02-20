@@ -16,6 +16,9 @@ body {
 img {
   max-width: 600px;
   border-radius: 15px;
+  height: 200px;
+  margin: 0 auto;
+  display: block;
 }
 
 .header-time {
