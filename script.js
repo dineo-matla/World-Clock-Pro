@@ -18,6 +18,32 @@ function refreshTime() {
     );
   }
 
+  //Cairo
+  let cairoElement = document.querySelector("#cairo");
+  if (cairoElement) {
+    let cairoDateElement = cairoElement.querySelector(".date");
+    let cairoTimeElement = cairoElement.querySelector(".time");
+    let cairoDate = moment().tz("Africa/Cairo");
+    cairoDateElement.innerHTML = cairoDate.format("dddd, MMMM D, YYYY");
+    let cairoTime = moment().tz("Africa/Cairo");
+    cairoTimeElement.innerHTML = cairoTime.format(
+      "HH:mm:ss [<small>]A[</small>]"
+    );
+  }
+
+  //Moscow
+  let moscowElement = document.querySelector("#moscow");
+  if (moscowElement) {
+    let moscowDateElement = moscowElement.querySelector(".date");
+    let moscowTimeElement = moscowElement.querySelector(".time");
+    let moscowDate = moment().tz("Europe/Moscow");
+    moscowDateElement.innerHTML = moscowDate.format("dddd, MMMM D, YYYY");
+    let moscowTime = moment().tz("Europe/Moscow");
+    moscowTimeElement.innerHTML = moscowTime.format(
+      "HH:mm:ss [<small>]A[</small>]"
+    );
+  }
+
   //Dubai
   let dubaiElement = document.querySelector("#dubai");
   if (dubaiElement) {
@@ -37,7 +63,7 @@ function updateCity(event) {
   if (cityTimeZone === "current") {
     cityTimeZone = moment.tz.guess();
   }
-  let cityName = cityTimeZone.replace("_", " ").split("/")[(1, 2)];
+  let cityName = cityTimeZone.replace("_", " ").split("/")[1];
   let locationTime = moment().tz(cityTimeZone);
   let cityElement = document.querySelector("#city");
   cityElement.innerHTML = `<div class="cities">
